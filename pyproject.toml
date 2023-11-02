@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "tinyurl"
+version = "0.1.0"
+description = "URL-shortening WEB app"
+authors = ["Petr Baev <perry322lol@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.104.1"
+furl = "^2.1.3"
+shortuuid = "^1.0.11"
+sourcery = "^1.12.0"
+sqlalchemy = "^2.0.23"
+uvicorn = "^0.23.2"
+
+
+[tool.poetry.group.ci.dependencies]
+mypy = "^1.6.1"
+ruff = "^0.1.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
